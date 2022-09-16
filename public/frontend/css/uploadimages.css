@@ -1,0 +1,143 @@
+ /*upload img*/
+#file-input {
+    display: none;
+}
+.preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 0 20px rgba(170, 170, 170, 0.2);
+}
+.preview img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+.preview label {
+    font-weight: 600;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 8px;
+    padding: 10px 20px;
+    background-color: rgb(101, 101, 255);
+}
+/*end upload img*/
+
+
+.upload__box {
+  /*padding: 40px;*/
+}
+.upload__inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.upload__btn {
+      display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    min-width: 116px;
+    padding: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+     border: 2px solid var(--main-color);; 
+    background-color: var(--main-color);
+     
+    border-radius: 3px;
+    line-height: 26px;
+    font-size: 14px;
+    /*width: 170px;*/
+    /*height: 170px;*/
+}
+.upload__btn:hover {
+  background-color: unset;
+  color: var(--main-color);;
+  transition: all 0.3s ease;
+}
+.upload__btn-box {
+  margin-bottom: 10px;
+}
+.upload__img-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px;
+      max-height: 50vh;
+    overflow: auto;
+}
+.upload__img-box {
+  /*width: 190px;*/
+  width: 50%;
+  padding: 0 5px;
+  margin-bottom: 12px;
+}
+.upload__img-close {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  line-height: 24px;
+  z-index: 1;
+  cursor: pointer;
+}
+.upload__img-close:after {
+  content: "✖";
+  font-size: 14px;
+  color: white;
+}
+
+.img-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-bottom: 100%;
+}
+.upload__btn p{
+  margin-bottom: 0;
+}
+
+
+
+ /*upload img*/
+.file-upload-content {
+  /*display: none;*/
+  text-align: center;
+  cursor: pointer; 
+  border-radius: 5px;
+  /*width: 170px;*/
+  border: 1px solid #ddd;
+}
+
+.file-upload-input {
+    opacity: 0;width: 100%;
+}
+.image-upload-wrap{position: absolute; top: 0;}
+.file-upload{position: relative;margin-bottom: 15px;}
+.file-upload-image {
+    width: 100%;
+    /*height: 170px;object-fit: cover;*/
+    /*margin: 10px 0px;*/
+}
+.remove-image {
+  width: 200px;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 7px;
+  border-radius: 4px;
+}
+.nav-md .container.body .right_col {
+    min-height: 100vh;
+}
+/*end upload img*/

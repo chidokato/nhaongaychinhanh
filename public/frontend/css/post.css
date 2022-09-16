@@ -1,0 +1,43 @@
+.post .input-group{ padding: 7px 10px; border-radius: 3px; border: 1px solid #ddd; width: 100%;}
+.post .input-group:focus-visible{ outline-color:#f4821ecc; }
+.post .form-group{ position: relative; }
+.post .form-group label.error{ position: absolute; top: 0; right: 0; color: red; }
+.post .form-group input.error:focus-visible{ outline-color:red; }
+.post .form-group .price input{ width: 60%; border-radius: 3px 0px 0px 3px; }
+.post .form-group .price select{ width: 40%; border-radius: 0px 3px 3px 0px; }
+.post .viewprice{ margin-top: 13px; }
+.post .address{ font-size: .9rem; }
+.loaihinh{ border-bottom: none;flex-wrap: nowrap; }
+.nav-tabs .nav-link{ border-color: #dee2e6 #dee2e6; border-radius: 3px; color: #000; }
+.nav-tabs .nav-link.active{ border-color: #dee2e6 #dee2e6; background: #f0f0f0; }
+.nav-tabs .nav-item{ width: 100%; }
+.nav-tabs .nav-item:first-child a{ border-radius: 3px 0px 0px 3px; }
+.nav-tabs .nav-item:last-child a{ border-radius: 0px 3px 3px 0px; }
+.space-between{ justify-content: space-between; }
+.post input[type="checkbox"]{ width: auto !important; height: auto !important; }
+.thoathuan label{border: none;padding: 0px 5px;border-radius: 5px;background: #f8f8f8; cursor: pointer; box-shadow: 0px 0px 2px 1px #ddd; -webkit-user-select: none; user-select: none;}
+.thoathuan label:hover{}
+.thoathuan .active{background: #e7e7e7;}
+.select2-container--default .select2-selection--single .select2-selection__arrow, .select2-container .select2-selection--single, .select2-container--default .select2-selection--single .select2-selection__rendered, .post input, .post select {
+  height: 38px !important;line-height: 36px !important;
+}
+
+.upload__img-wrap::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 3px #fff;
+  background-color: #F5F5F5;
+}
+.upload__img-wrap::-webkit-scrollbar
+{
+  width: 3px;
+  background-color: #F5F5F5;
+}
+.upload__img-wrap::-webkit-scrollbar-thumb
+{
+  background-color: #aaa;
+}
+.area:after {content: 'm2';  position: absolute;  right: 10px;  top: 37px;}
+.select2-container {
+    width: 100% !important;
+}
+.postarctile button[type="submit"]{ background: var(--main-color); }
