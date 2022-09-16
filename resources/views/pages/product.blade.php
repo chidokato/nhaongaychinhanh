@@ -10,7 +10,7 @@
 <!-- ================= Style ================== --> 
 <link rel="stylesheet" href="frontend/css/jquery-ui.css">
 <!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i%7CMontserrat:500,600,800" rel="stylesheet">
+<!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i%7CMontserrat:500,600,800" rel="stylesheet"> -->
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="frontend/css/fontawesome-all.min.css">
 <link rel="stylesheet" href="frontend/css/fontawesome-5-all.min.css">

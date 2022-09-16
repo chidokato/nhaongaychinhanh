@@ -10,8 +10,8 @@
 <!-- ================= Style ================== --> 
 <link rel="stylesheet" href="frontend/css/jquery-ui.css">
 <!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oooh Baby">
+<!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oooh Baby"> -->
 <!-- FONT AWESOME -->
 <link rel="stylesheet" href="frontend/css/fontawesome-all.min.css">
 <link rel="stylesheet" href="frontend/css/fontawesome-5-all.min.css">
