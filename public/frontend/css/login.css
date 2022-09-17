@@ -6,7 +6,7 @@ a:focus-visible, button:focus-visible{ outline: none !important; }
     background-size: 100%;
     background: url(../../data/background.svg) no-repeat fixed bottom;
 }
-.custom-form{ width: 500px; margin: 0px auto; padding-top: 150px;}
+.custom-form{ width: 500px; margin: 0px auto; padding-top: 150px; padding-bottom: 100px; position: relative;}
 .custom-form img{ width: 300px;}
 .custom-form .img{ text-align: center; margin-bottom: 25px; }
 .form-group{ display: flex; flex-direction: column; margin-bottom: 20px; position: relative; }
@@ -21,7 +21,7 @@ a:focus-visible, button:focus-visible{ outline: none !important; }
 input:focus-visible{ outline-color: #f3b37b !important }
 .mt-4{ text-align: center; }
 .colored{color: red;}
-.signup .custom-form{ padding-top: 50px }
+.signup .custom-form{ padding-top: 50px;  }
 .capchar{ display: flex;align-items: flex-end; justify-content: space-between; }
 .custom-form input[type=button]{ 
     background: #f3b37b52;margin-right: 20px;
@@ -33,3 +33,10 @@ input:focus-visible{ outline-color: #f3b37b !important }
 .capchar .form-group label.error{ top: -20px; }
 .hidden{ display: none; }
 .public{ display: block; }
+.close a{ padding: 10px; background: #cfcfcf; padding: 10px 17px; border-radius: 100px; color: #0a5597; position: absolute; top: 20px; right: 0; }
+.close a:hover{ text-decoration: none; }
+
+@media (max-width: 575px){
+    .inner-pages{ min-width: 100%; }
+    .custom-form{ width: 90%; }
+}

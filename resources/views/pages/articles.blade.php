@@ -212,26 +212,36 @@
                                     <span class=" mr-1">Trạng thái:</span>
                                     <span class="det font-weight-bold">Còn hàng</span>
                                 </li>
+                                @if($articles->product->price)
                                 <li>
                                     <span class="mr-1">Giá bán:</span>
                                     <span class="font-weight-bold det">{{$articles->product->price}} {{$articles->product->unit}}</span>
                                 </li>
+                                @endif
+                                @if($articles->product->bedroom)
                                 <li>
                                     <span class="mr-1">Phòng ngủ:</span>
                                     <span class="font-weight-bold det">{{$articles->product->bedroom}}</span>
                                 </li>
+                                @endif
+                                @if($articles->product->toilet)
                                 <li>
                                     <span class="mr-1">Phòng tắm:</span>
                                     <span class="font-weight-bold det">{{$articles->product->toilet}}</span>
                                 </li>
+                                @endif
+                                @if($articles->product->direction)
                                 <li>
                                     <span class=" mr-1">Hướng nhà:</span>
                                     <span class="font-weight-bold det">{{$articles->product->direction}}</span>
                                 </li>
+                                @endif
+                                @if($articles->product->area)
                                 <li>
                                     <span class="mr-1">Diện tích:</span>
                                     <span class="font-weight-bold det">{{$articles->product->area}} m2</span>
                                 </li>
+                                @endif
                             </ul>
                             <!-- title -->
                         </div>
@@ -284,7 +294,7 @@
                                 </li>
                                 <li>
                                     <p>Chuyên mục</p>
-                                    <p>{{$articles->category->name}}</p>
+                                    <p><a href="{{$articles->category->slug}}">{{$articles->category->name}}</a></p>
                                 </li>
                             </ul>
                         </div>

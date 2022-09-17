@@ -48,7 +48,7 @@
 
             <!-- Right Side Content / End -->
             @if(Auth::check())
-            <div class="right-side d-none d-lg-none d-xl-flex">
+            <div class="right-side d-xl-flex">
                 <!-- Header Widget -->
                 <div class="header-widget">
                     <a href="profile/articles/post" class="button border">Đăng tin<i class="fas fa-laptop-house ml-2"></i></a>
@@ -62,7 +62,7 @@
             
             <div class="header-user-menu user-menu add">
                 <div class="header-user-name">
-                    <span><img src="data/user/{{ isset(Auth::User()->avatar)? Auth::User()->avatar:'no_image.jpg'}}" alt=""></span> <div class="m-none">Hi, {{Auth::User()->your_name}}!</div>
+                    <span><img src="data/user/{{ isset(Auth::User()->avatar)? Auth::User()->avatar:'no_image.jpg'}}" alt=""></span> <div class=" m-none ">Hi, {{Auth::User()->your_name}}!</div>
                 </div>
                 <ul>
                     <li><a href="profile"> Thông tin cá nhân</a></li>
@@ -72,30 +72,13 @@
                 </ul>
             </div>
             @else
-            <!-- <div class="header-user-menu user-menu add signin" >
-                <a  href="#">
-                    <div class="header-user-name  show-reg-form modal-open" style="padding-top: 5px">
-                        <i class="fa fa-user"></i> <div class="m-none">Đăng nhập</div>
-                    </div>
-                </a>
-            </div> -->
-
-            <div class="right-side d-none d-lg-none d-xl-flex">
+            <div class="right-side d-xl-flex">
                 <!-- Header Widget -->
                 <div class="header-widget">
-                    <a href="profile/login" class="button border">Đăng tin<i class="fas fa-laptop-house ml-2"></i></a>
+                    <a href="profile/login" class="button border">Đăng nhập<i class="fas fa-laptop-house ml-2"></i></a>
                 </div>
                 <!-- Header Widget / End -->
             </div>
-
-            <div class="right-side d-none d-none d-lg-none d-xl-flex sign ml-0">
-                <!-- Header Widget -->
-                <div class="header-widget sign-in">
-                    <div class="show-reg-form"><a href="profile/login">Đăng nhập</a></div>
-                </div>
-                <!-- Header Widget / End -->
-            </div>
-
             @endif
             <!-- Right Side Content / End -->
             

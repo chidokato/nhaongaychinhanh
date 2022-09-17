@@ -231,3 +231,12 @@ function readURL(input) {
 }
 // upload images
 
+
+function changetitle (el) {
+    var max_title = 120;
+    if (el.value.length > max_title) {
+        el.value = el.value.substr(0, max_title);
+    }
+    document.getElementById('chars_title').innerHTML = max_title - el.value.length;
+    return true;
+}

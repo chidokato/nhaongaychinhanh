@@ -7638,7 +7638,7 @@ html input[disabled] {
   float: right;
   /*width: 90px;*/
   padding: 0 20px 0 20px;
-  border-left: 1px solid #fff;
+  /*border-left: 1px solid #fff;*/
   border-right: 1px solid #fff;
   margin-top: 20px;
   margin-left: 0px !important;
@@ -10188,7 +10188,7 @@ a.button {
   /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/bg/bg-15.jpg") no-repeat center top;*/
   /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg/bg-15.jpg") no-repeat center top;*/
   background-size: cover;
-  background-attachment: fixed !important;
+  /*background-attachment: fixed !important;*/
   width: 100%;
   height: 90vh;
 }
@@ -10197,7 +10197,7 @@ a.button {
   /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/bg/thome-6.jpg) no-repeat center top;*/
   /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg/thome-6.jpg) no-repeat center top;*/
   background-size: cover;
-  background-attachment: fixed !important;
+  /*background-attachment: fixed !important;*/
   width: 100%;
   height: 85vh;
   position: relative;
@@ -10208,7 +10208,7 @@ a.button {
   /*background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url(../images/bg/bg-h-1.jpg) no-repeat center top !important;*/
   /*background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg/bg-h-1.jpg) no-repeat center top !important;*/
   background-size: cover;
-  background-attachment: fixed !important;
+  /*background-attachment: fixed !important;*/
   width: 100%;
   height: 95vh;
 }
@@ -13432,9 +13432,9 @@ section.how-it-works {
   text-align: center;
   padding: 1.5rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  /*-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f1f1f1;*/
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -13466,9 +13466,14 @@ section.how-it-works {
 .how-it-works article img {
   padding-right: 1rem;
   padding-bottom: .5rem;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  /*height: 120px;*/
   text-align: center;
+}
+.how-it-works article h3 {
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 25px;margin-top: 10px !important;
 }
 
 .how-it-works .sec-title {
@@ -17994,7 +17999,7 @@ section.dashboard-bd {
   transition: 0.2s;
   white-space: nowrap;
   text-overflow: ellipsis;
-  padding-top: 10px;
+  padding-top: 13px;
   font-weight: 400;
 }
 
@@ -24359,7 +24364,7 @@ section.single-proper.details {
 .sidebar-widget .author-articles{ padding: 20px;     box-shadow: 0 0 2px rgb(0 0 0 / 10%);
     border: 1px solid rgb(0 0 0 / 6%); }
 .sidebar-widget .author-articles .author-box {margin-bottom: 5px;display: flex;flex-direction: column;align-items: center;}
-.sidebar-widget .author-articles .author-box img {width: 170px;height: 170px; border: 4px solid var(--sub-color);}
+.sidebar-widget .author-articles .author-box img {width: 170px;height: 170px; border: 4px solid var(--sub-color); object-fit: cover;}
 .sidebar .sidebar-widget .author__meta{color: var(--sub-color);}
 .sidebar-widget .author-articles .author-box .author__title{position: relative;  margin-bottom: 0px;    padding-top: 15px;    border-top: 1px solid #ddd;    width: 100%;    text-align: center;}
 .sidebar-widget .author-articles .author__contact li{ border: 1px solid #ddd; border-radius: 4px; padding: 10px; padding-left: 50px; }

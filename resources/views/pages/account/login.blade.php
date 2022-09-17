@@ -9,6 +9,7 @@
 
 <section class="inner-pages">
     <div class="custom-form">
+        <div class="close"><a href="{{asset('')}}">x</a></div>
         <div class="img"> <img src="data/logongang.png"> </div>
         <form id="validateForm" action="profile/login" method="post" name="registerform">
             <input type="hidden" name="_token" value="{{csrf_token()}}" />

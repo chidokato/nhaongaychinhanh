@@ -121,8 +121,8 @@
 
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <label>Tiêu đề</label>
-                                            <input value="{{ isset($data)? $data->name:'' }}" class="input-group" type="text" name="name" placeholder="Tiêu đề">
+                                            <label>Tiêu đề</label> <span style="font-size: .8rem;"> (Ký tự còn lại: <span id="chars_title">120</span>) </span>
+                                            <input onkeyup="changetitle(this);"  value="{{ isset($data)? $data->name:'' }}" class="input-group" type="text" name="name" placeholder="Tiêu đề">
                                         </div>
                                     </div>
                                     <div class="col-md-12">
@@ -150,8 +150,8 @@
                                             <div class="flex price">
                                                 <input value="{{ isset($data)? $data->product->price:'' }}" class="input-group" type="text" id="currency" data-type="currency" name="price" placeholder="Giá tiền">
                                                 <select name='unit' id="unit" class="input-group">
-                                                    <option <?php if(isset($data) && $data->product->unit == 'Triệu'){ echo 'selected'; } ?> value="1000000">Triệu</option>
                                                     <option <?php if(isset($data) && $data->product->unit == 'Tỷ'){ echo 'selected'; } ?> value="1000000000">Tỷ</option>
+                                                    <option <?php if(isset($data) && $data->product->unit == 'Triệu'){ echo 'selected'; } ?> value="1000000">Triệu</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -218,7 +218,13 @@
                                     </div>
                                     <div class="col-md-8">
                                         <div class="form-group">
-                                            <label>Địa chỉ: <span class="address-val">{{ isset($data)? $data->product->address:'' }}</span> <span class="street-val">{{ isset($data)? $data->product->street->name:'' }}</span> <span class="ward-val">{{ isset($data)? $data->product->ward->name:'' }}</span> <span class="district-val">{{ isset($data)? $data->product->district->name:'' }}</span> <span class="province-val">{{ isset($data)? $data->product->province->name:'' }}</span></label>
+                                            <label>Địa chỉ: 
+                                                <span class="address-val">{{ isset($data)? $data->product->address:'' }}</span> 
+                                                <span class="street-val">{{ isset($data->product->street->name)? $data->product->street->name:'' }}</span> 
+                                                <span class="ward-val">{{ isset($data->product->ward->name)? $data->product->ward->name:'' }}</span> 
+                                                <span class="district-val">{{ isset($data->product->district->name)? $data->product->district->name:'' }}</span> 
+                                                <span class="province-val">{{ isset($data->product->province->name)? $data->product->province->name:'' }}</span>
+                                            </label>
                                             <input value="{{ isset($data)? $data->product->address:'' }}" id="address-val" class="input-group" type="text" name="address" placeholder="Địa chỉ chi tiết">
                                         </div>
                                     </div>
@@ -255,7 +261,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group">
                                             <label>Bản đồ</label>
-                                            <textarea class="input-group" value="{{ isset($data)? $data->product->maps:'' }}" name="maps" rows="2" placeholder="Mã nhúng bản đồ"></textarea>
+                                            <textarea class="input-group" name="maps" rows="2" placeholder="Mã nhúng bản đồ">{{ isset($data)? $data->product->maps:'' }}</textarea>
                                         </div>
                                     </div>
                                     

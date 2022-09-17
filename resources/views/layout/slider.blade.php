@@ -1,5 +1,6 @@
 <!-- STAR HEADER SEARCH -->
-        <section id="hero-area" class="parallax-searchs home15 overlay thome-6 thome-1" data-stellar-background-ratio="0.5" style="background:url(images/slider.jpg) no-repeat center top;background-size: cover;">
+@foreach($slider as $val)
+        <section id="hero-area" class="parallax-searchs home15 overlay thome-6 thome-1" data-stellar-background-ratio="0.5" style="background:url(data/themes/{{$val->img}}) no-repeat center top;background-size: cover;">
             <div class="hero-main">
                 <div class="container container-seaech" data-aos="zoom-in"> 
             <div class="hero-inner">
@@ -7,7 +8,7 @@
                 <div class="welcome-text">
                     <p class="style">Tìm kiếm ngay</p>
                     <p class="title">Ngôi nhà mơ ước của <span>Bạn</span></p>
-                    <p>QUẬN CẦU GIẤY</p>
+                    <p>{{$val->name}}</p>
                 </div>
                 <!--/ End Welcome Text -->
                 <!-- Search Form -->
@@ -84,6 +85,7 @@
         </div>
     </div>
 </section>
+@endforeach
 <!-- END HEADER SEARCH -->
 
 

@@ -13,6 +13,12 @@
   .price-properties div.title, .portfolio .homes-content .homes-list li{ display: flex;flex-direction: column; }
 }
 
+@media (max-width: 1200px){
+  .hd-white .right-side.sign{ border-right: none; margin-top: 5px; }
+  .header-widget{ border-top: none; text-align: right !important; }
+
+}
+
 @media (max-width: 992px){
 
 }
@@ -25,10 +31,14 @@
   .popular img{ height: 300px; }
   .my-properties table tbody tr td:last-child a {margin-bottom: 10px;}
   .my-properties table tbody tr .image {padding-left: 15px;}
-
-
-
-
+  .right-side{ margin-left: 0px; }
+  header .right-side .header-widget a{ background: var(--sub-color) !important;padding: 10px; border-radius: 5px; color: #fff !important; }
+  header .right-side .header-widget a i{ display: none; }
+  .right-side{ width: auto !important; }
+  .header-widget{ padding: 4px;}
+  .header-user-name:before{content: none;}
+  
+  
 }
 
 

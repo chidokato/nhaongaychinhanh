@@ -93,7 +93,7 @@
                     </select>
                 </div>
 
-                <div class="form-group add-fats">
+                <!-- <div class="form-group add-fats">
                     <label><span>Tags</span> <span data-toggle="modal" data-target="#add_category" id="add"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm mới</span></label>
                     <select name='tag' class="form-control  select2" multiple>
                         <option>ádasd</option>
@@ -101,7 +101,7 @@
                         <option>ádasd</option>
                         <option>ádasd</option>
                     </select>
-                </div>
+                </div> -->
 
             </div>
         </div>

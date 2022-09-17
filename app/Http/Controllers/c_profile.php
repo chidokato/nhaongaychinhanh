@@ -18,7 +18,7 @@ use App\mausac;
 use App\size;
 use App\messages;
 use App\seo;
-use App\user;
+use App\User;
 use Mail;
 use Auth;
 use File;
@@ -194,7 +194,7 @@ class c_profile extends Controller
     }
     public function postresetpassword(Request $Request)
     {
-        $user = user::where('email', $Request->email)->first();
+        $user = User::where('email', $Request->email)->first();
         $user->password = bcrypt($Request->password);
         $user->save();
         return redirect('profile/login')->with('Alerts','Đổi mật khẩu thành công');

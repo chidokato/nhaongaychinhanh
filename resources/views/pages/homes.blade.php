@@ -49,7 +49,7 @@
 @include('layout.header')
 @include('layout.slider')
 
-<section class="popular home18 bg-white-2 pt-5 pb-5">
+<section class="popular home18  pt-5 pb-5  bg-icon">
     <div class="container">
         <div class="sec-title">
             <h2><span>Hạng mục </span>Bất động sản</h2>
@@ -91,7 +91,7 @@
 
 
 <!-- START SECTION FEATURED PROPERTIES -->
-<section class="featured portfolio home18 bg-icon">
+<section class="featured portfolio home18 bg-white-2">
     <div class="container">
         <div class="sec-title">
             <h2><span>Sản phẩm </span>nổi bật</h2>
@@ -112,7 +112,7 @@
 <!-- END SECTION FEATURED PROPERTIES -->  
 
 <!-- START SECTION WHY CHOOSE US -->
-<section class="how-it-works home18 bg-white-2">
+<section class="how-it-works home18 ">
     <div class="container">
         <div class="sec-title">
             <h2><span>Tại sao </span>lựa chọn chúng tôi</h2>
@@ -122,7 +122,7 @@
             <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                 <div class="serv-flex">
                     <div class="art-1 img-13">
-                        <img src="frontend/images/icons/icon-4.svg" alt="">
+                        <img src="images/ic1.png" alt="">
                         <h3>Nhiều loại hình sản phẩm</h3>
                     </div>
                     <div class="service-text-p">
@@ -133,7 +133,7 @@
             <article class="col-lg-4 col-md-6 col-xs-12 serv" data-aos="fade-up">
                 <div class="serv-flex">
                     <div class="art-1 img-14">
-                        <img src="frontend/images/icons/icon-5.svg" alt="">
+                        <img src="images/ic2.png" alt="">
                         <h3>Rất nhiều người tin cậy</h3>
                     </div>
                     <div class="service-text-p">
@@ -144,7 +144,7 @@
             <article class="col-lg-4 col-md-6 col-xs-12 serv mb-0 pt" data-aos="fade-up">
                 <div class="serv-flex arrow">
                     <div class="art-1 img-15">
-                        <img src="frontend/images/icons/icon-6.svg" alt="">
+                        <img src="images/ic3.png" alt="">
                         <h3>Manh bạch về pháp lý</h3>
                     </div>
                     <div class="service-text-p">
@@ -158,7 +158,7 @@
 <!-- END SECTION WHY CHOOSE US -->
 
 <!-- START SECTION POPULAR PLACES -->
-<section class="visited-cities bg-icon home18">
+<section class="visited-cities bg-white-2 home18">
     <div class="container">
         <div class="sec-title">
             <h2><span>Sản phẩm </span>trên địa bàn</h2>

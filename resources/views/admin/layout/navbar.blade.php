@@ -29,9 +29,9 @@
     <li class="nav-item">
         <a class="nav-link" href="admin/news/list"><i class="fas fa-fw fa-chart-area"></i><span>Tin tức</span></a>
     </li>
-    <li class="nav-item">
+    <!-- <li class="nav-item">
         <a class="nav-link" href="admin/messages/list"><i class="fas fa-fw fa-chart-area"></i><span>Messages</span></a>
-    </li>
+    </li> -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#setting"
             aria-expanded="true" aria-controls="setting">
@@ -73,7 +73,7 @@
         <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
             data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
-                <a class="collapse-item" href="admin/investor/list">investor</a>
+                <!-- <a class="collapse-item" href="admin/investor/list">investor</a> -->
                 <a class="collapse-item" href="admin/province/list">Province</a>
                 <a class="collapse-item" href="admin/district/list">District</a>
                 <a class="collapse-item" href="admin/ward/list">Ward</a>
